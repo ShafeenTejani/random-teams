@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Random Team Generator</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="stylesheets/random-teams.css"/>
+</head>
+<body>
+	<div class="container">
+
+		<header>
+			<h1>Random Team Generator</h1>
+    	</header>
+    	<div class="row">
+    		<div class="players span4"></div>
+    		<div class="generate-teams span8"></div>
+    	</div>
+  	</div>
+
+
+  	<script type="text/template" id="player-list-template">
+  		<input id="add-player" type="text" placeholder="Add a Player...">
+  		<ul id="player-list">
+  		</ul>
+  	</script>
+
+  	<script type="text/template" id="team-list-template">
+  		<ul id="team-list">
+  		</ul>
+  	</script>
+
+  	<script type="text/template" id="generate-teams-template">
+  		<span>Number of teams:</span>
+  		<input name="num-teams" id="num-teams" type="number">
+  		<button class="btn generate">Generate</button>
+  		<div class="teams"></div>
+  	</script>
+
+	<script type="text/template" id="team-template">
+  		<div class="team">
+  			<h3 class="team-name"><%= model.get('name') %></h2>
+  			<% _.each(model.get('players'), function(player) { %>
+  				<div class="team-player"><%= player.get('name') %></div>
+  			<% }); %>
+  		</div>
+  	</script>
+
+  	<script type="text/template" id="player-template">
+		<div class="player">
+			<span><%= model.get('name') %></span>
+			<a class="destroy"></a>
+		</div>
+  	</script>
+
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js" type="text/javascript"></script>
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"></script>
+
+  	<script type="text/javascript" src="javascripts/random-teams.js">
+  	
+  	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+header {
+	margin-bottom: 2em;
+}
+
+#team-list, #player-list {
+	list-style-type: none;
+	padding: 0; 
+	margin:0;
+}
+
+.team-player {
+	padding-left: 1em;
+	padding-bottom: 0.5em;
+}
+
+
+#player-list li, #team-list li {
+	padding: 10px 3px 10px 3px;
+	width: 200px;
+	position: relative;
+	font-size: 1.3em;
+	border-bottom: 1px solid #CCC;
+}
+
+
+#player-list li:last-child {
+	border-bottom: none;
+}
+
+
+
+#team-list li:last-child {
+	border-bottom: none;
+}
+
+#num-teams {
+	margin-left: 2px;
+	width: 3em;
+}
+
+button.generate {
+	margin-left: 2px;
+	margin-bottom: 9px;
+}
+
+#player-list .destroy {
+	position: absolute;
+	right: 5px;
+	top: 13px;
+	cursor: pointer;
+	display: none;
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+	background: url(/images/destroy.png) no-repeat;
+}
+
+#player-list li:hover .destroy {
+	display: block;
+}
+
+#player-list .destroy:hover {
+  	background-position: 0 -20px;
+}
