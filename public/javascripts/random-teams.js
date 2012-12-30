@@ -60,7 +60,7 @@
 
   			addOne: function(player) {
   				var view = new PlayerView({model: player});
-  				this.$("#player-list").append(view.render().el);
+  				this.$("#player-list").prepend(view.render().el);
   			},
 
   			addAll: function() {
