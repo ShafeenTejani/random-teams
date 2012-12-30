@@ -141,8 +141,10 @@
 
 			generateTeams: function(ev) {
   				var num = this.$("#num-teams").val();
-  				var teams = generateRandomTeams(num, Players); 
-				new TeamsView({ collection: teams}).render();
+  				if (num && num > 0) {
+            var teams = generateRandomTeams(num, Players); 
+				    new TeamsView({ collection: teams}).render();
+          }
   			},
 
   			clickOnEnter: function(e) {
