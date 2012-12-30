@@ -1,7 +1,7 @@
 Random Team Generator
 ============
 
-A webapp to randomly generate teams given a list of players.
+A webapp to randomly generate teams given a list of players. Hosted at: randomteams.herokuapp.com
 
 
 To run locally
