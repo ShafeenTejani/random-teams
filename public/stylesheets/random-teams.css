@@ -1,6 +1,6 @@
 
-header {
-	margin-bottom: 2em;
+#header {
+	margin-bottom: 1em;
 }
 
 #team-list, #player-list {
@@ -76,5 +76,10 @@ button.generate {
 		padding-top: 1.5em;
 		border-top: 1px solid;
 	}
+
+	#header {
+		font-size: 1.5em;		
+	}
+
 
 }
