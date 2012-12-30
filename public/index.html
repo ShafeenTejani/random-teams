@@ -3,18 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>Random Team Generator</title>
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="stylesheets/random-teams.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheets/random-teams.css"/>
 </head>
 <body>
-	<div class="container">
-
-		<header>
+	<div class="container-fluid">
+      <div class="row-fluid">
+      <header>
 			<h1>Random Team Generator</h1>
+    </div>
     	</header>
-    	<div class="row">
+    	<div class="row-fluid">
     		<div class="players span4"></div>
-    		<div class="generate-teams span8"></div>
+    		<div id="generate-teams" class="generate-teams span8"></div>
     	</div>
   	</div>
 

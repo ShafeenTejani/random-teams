@@ -49,12 +49,13 @@ button.generate {
 	right: 5px;
 	top: 13px;
 	cursor: pointer;
-	display: none;
 	margin-left: 10px;
+	display: block;
 	width: 20px;
 	height: 20px;
 	background: url(/images/destroy.png) no-repeat;
 }
+
 
 #player-list li:hover .destroy {
 	display: block;
@@ -62,4 +63,18 @@ button.generate {
 
 #player-list .destroy:hover {
   	background-position: 0 -20px;
+}
+
+
+/* For phones */
+@media (max-width: 767px) { 
+
+	#generate-teams {
+		clear: left;
+		margin-left: 0px;
+		margin-top: 1.5em;
+		padding-top: 1.5em;
+		border-top: 1px solid;
+	}
+
 }
